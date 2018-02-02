@@ -40,7 +40,7 @@ function order(food, drink, dessert){
 	//Print the length of the array named "order"
 	console.log(order.length);
 	//Return the order as a complete sentence represented as a string
-	return order("food", "drink", "dessert");
+	return "Lets get some " +food+ " and " +drink+ " then after get some " +dessert+ ".";
 }
 
 console.log(order("Burger", "root beer", "frosty"));
@@ -65,7 +65,9 @@ function loopToChange(classes){
 	//Print the parameter that is being passed through the function
 	console.log(loopToChange(classes));
 	//Use a For loop to iterate through each value in the passed array
-	for (i  )
+	for (i = 0; i < classes.length; i++) {
+		console.log(classes[i]);
+	}
 	//Return classes
 	return classes;
 }
@@ -80,11 +82,13 @@ console.log(loopToChange(currentClasses));
 */
 function arrayMethodToLoop(numbers){
 	//Print the parameter that is being passed through the function
-
+	console.log(numbers);
 	//Use the forEach() method to add 5 to each value in the passed array
-	
+		numbers.forEach(function(5) {
+			console.log(5);
+		})
 	//Return the changed array
-	return;
+	return numbers;
 }
 
 console.log(arrayMethodToLoop([5, 7, 3, 4, 5]));
@@ -97,17 +101,18 @@ console.log(arrayMethodToLoop([5 + 1, 3]));
 */
 function moreArrayMethods(priorities){
 	//Print the parameter that is being passed through the function
-
-	//Use the method sort() to sort your priorities
-
+	console.log(priorities);
+	//Use the method sort()=to sort your priorities
+	priorities.sort();
 	//Use the method indexOf() to replace "Not Going to Class" to "Going to Class"
-
-	//Use the method pop() to remove the item at the end of the array
-
+	priorities(indexOf("Not Going to Class")) = "Going to Class";
+	//Use the method pop()=to remove the item at the end of the array
+	priorities.pop();
 	//Use the method push() to add a priority that is important to the success of this class and don't forget to sort() them afterwards!
-
+	priorities.push(Effort);
+	priorities.sort();
 	//Return the changed array
-	return;
+	return priorities;
 }
 
 console.log(moreArrayMethods(["Zero Play", "Sleeping", "HW", "Work", "School", "Planning For Future", "Not Going to Class"]));
